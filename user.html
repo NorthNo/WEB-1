@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alter ● Ana Sayfa</title>
+    <link rel="stylesheet" href="css/login_style.css">
+    <link rel="icon" href="img/minilogo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <div class="left-bottom-button" id="returnbutton">
+        <i class="fa-solid fa-arrow-left"></i>
+        <span class="button-text">Return Home page</span>
+    </div>
+    
+    <div class="container" id="container">
+        <div class="form-container sign-up">
+            <form>
+                <h1>Hesap Oluştur</h1>
+                <div class="social-icons">
+                    <a href="#" class="icon"><i class="fa-brands fa-google"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+                <span>ya da email adresini kullan</span>
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Şifre">
+                <input type="password" placeholder="Tekrar Şifre">
+                <button>Sign Up</button>
+            </form>
+        </div>
+        <div class="form-container sign-in">
+            <form>
+                <h1>Giriş Yap</h1>
+                <div class="social-icons">
+                    <a href="#" class="icon"><i class="fa-brands fa-google"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+                <span>ya da email ve şifreni kullan</span>
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Şifre">
+                <a href="#">Şifreni mi unuttun?</a>
+                <button>Login</button>
+            </form>
+        </div>
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-left">
+                    <h1>Hoşgeldin!</h1>
+                    <p>Cras ipsum ipsum, cursus at dui quis, ornare laoreet tortor. Integer malesuada augue ac libero
+                        lacinia pharetra.</p>
+                    <button class="hidden" id="login">Login</button>
+                </div>
+                <div class="toggle-panel toggle-right">
+                    <img src="img/login_page.png" alt="">
+                    <h1>Bize Katılın!</h1>
+                    <p>Cras ipsum ipsum, cursus at dui quis, ornare laoreet tortor. Integer malesuada augue ac libero
+                        lacinia pharetra.</p>
+                    <button class="hidden" id="register">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

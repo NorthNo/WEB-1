@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alter ● Cüzdan</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/38fe485012.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="img/minilogo.png">
+</head>
+
+<body>
+    <header id="div1">
+        <div class="container">
+            <a class="logo-container" href="index.html">
+                <img src="img/alter-high-resolution-logo-transparent (1).png" alt="Logo">
+            </a>
+            <div class="navbar">
+                <div class="nav">
+                    <ul class="nav-links">
+                        <li><a href="index.html"><span>Home</span></a></li>
+                        <li><a href="servisler.html"><span>Servisler</span></a></li>
+                        <li><a href="kurulum.html"><span>Kurulum</span></a></li>
+                        <li><a href="contact.html"><span>İletişim</span></a></li>
+                        <div class="login-signup" class="active">
+                            <ul>
+                                <li><a href="user.html" class="nav-button login-button"><span><i
+                                                class="fa-solid fa-right-to-bracket"></i>Giriş Yap</span></a></li>
+                                <li><a href="user.html" class="nav-button register-button"><span><i
+                                                class="fa-solid fa-user"></i>Kayıt
+                                            Ol</span></a></li>
+                            </ul>
+                        </div>
+                        <!--<li><a href="account.html"><i class="fa-solid fa-user"></i><span>Hesabım</span></a></li>-->
+                    </ul>
+                    <div class="menu-icon" id="menu-icon">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                    <!--
+                    <div class="theme-mode">
+                        <input class="input" type="checkbox" name="darkmode" id="dark-mode" />
+                        <label for="dark-mode" class="label">
+                            <span class="circle"></span>
+                        </label>
+                        <button class="menu-icon" id="menu-icon">
+                            <i class="fa-solid fa-bars"></i>
+                        </button>
+                    </div>-->
+                </div>
+            </div>
+            <div class="nav-links-menu" id="navbar-dropdown">
+                <ul>
+                    <li><a href="index.html" class="active"><span>Home</span></a></li>
+                    <li><a href="servisler.html"><span>Servisler</span></a></li>
+                    <li><a href="kurulum.html"><span>Kurulum</span></a></li>
+                    <li><a href="contact.html"><span>İletişim</span></a></li>
+                    <li><a href="account.html"><span>Hesabım</span></a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <div class="bars-contain">
+        <div class="left-bar">
+            <ul>
+                <li>
+                    <a href="account.html">
+                        <i class="fa-solid fa-money-bill-transfer"></i>
+                        <p>İşlemler</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="active">
+                        <i class="fa-solid fa-wallet"></i>
+                        <p>Cüzdan</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="settings.html">
+                        <i class="fa-solid fa-gear"></i>
+                        <p>Hesap Ayarları</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="transactions">
+            <div class="wallet-grid">
+                <div class="wallet-control">
+                    <div class="credit-card">
+                        <h1>VISA</h1>
+                        <p>**** **** **** 1234</p>
+                    </div>
+                    <div class="credit-card">
+                        <h1>MasterCard</h1>
+                        <p>**** **** **** 1234</p>
+                    </div>
+                    <button class="credit-card-add" id="credit-card-modal">
+                        <i class="fa-solid fa-square-plus"></i>
+                    </button>
+                </div>
+                <div class="wallet-balance">
+                    <div class="wallet-title">
+                        <h1>Cüzdan Bakiyesi</h1>
+                        <p>125,45 TL</p>
+                    </div>
+                    <div class="wallet-history">
+                        <div class="wallet-op">
+                            <div class="operation-type-buy"><i class="fa-solid fa-circle-minus"></i></div>
+                            <div class="information">
+                                <p id="card">Fusce congue</p>
+                                <p id="date">14.08.2024 18.54</p>
+                            </div>
+                            <div class="amount">
+                                <p id="buy">150 TL</p>
+                                <p id="type">Transfer</p>
+                            </div>
+                        </div>
+                        <div class="wallet-op">
+                            <div class="operation-type-buy"><i class="fa-solid fa-circle-minus"></i></div>
+                            <div class="information">
+                                <p id="card">Praesent in ultrices risus</p>
+                                <p id="date">14.08.2024 15.42</p>
+                            </div>
+                            <div class="amount">
+                                <p id="buy">125 TL</p>
+                                <p id="type">Transfer</p>
+                            </div>
+                        </div>
+                        <div class="wallet-op">
+                            <div class="operation-type-add"><i class="fa-solid fa-circle-plus"></i></div>
+                            <div class="information">
+                                <p id="card">MasterCard Çekim</p>
+                                <p id="date">14.08.2024 15.27</p>
+                            </div>
+                            <div class="amount">
+                                <p id="add">400,45 TL</p>
+                                <p id="type">Transfer</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="add-card-modal" id="card-modal">
+
+        </div>
+    </div>
+    </div>
+    <script>
+        document.getElementById("credit-card-modal").addEventListener('click', () => {
+            document.getElementById("card-modal").classList.toggle("open");
+        });
+    </script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

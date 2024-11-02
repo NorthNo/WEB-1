@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alter ● Dashboard</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/38fe485012.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="img/minilogo.png">
+</head>
+
+<body>
+    <div class="admin-dashboard">
+        <div class="bars-containn">
+            <div class="left-bar">
+                <a class="logo-container" href="index.html">
+                    <img src="img/alter-high-resolution-logo-transparent (1).png" alt="Logo">
+                </a>
+                <ul>
+                    <li><a href="dashboard.html">
+                            <i class="fa-solid fa-house"></i>
+                            <p>Dashboard</p>
+                        </a></li>
+                    <li><a href="#" id="x1" class="active">
+                            <i class="fa-solid fa-credit-card"></i>
+                            <p>Manage Products</p>
+                        </a></li>
+                    <div class="elements open" id="1">
+                        <li><a href="#" class="element">
+                                <p>Ürünler</p>
+                            </a></li>
+                        <li><a href="product_control.html" class="element">
+                                <p>Ürün Kontrolleri</p>
+                            </a></li>
+                    </div>
+
+                    <li><a href="#" id="x2">
+                            <i class="fa-solid fa-file"></i>
+                            <p>Manage Sections</p>
+                        </a></li>
+                    <div class="elements" id="2">
+                        <li><a href="sections.html" class="element" onclick="showContent('s-1')">
+                                <p>Intro Section</p>
+                            </a></li>
+                        <li><a href="sections.html" class="element" onclick="showContent('s-2')">
+                                <p>Most Populer Section</p>
+                            </a></li>
+                        <li><a href="sections.html" class="element" onclick="showContent('s-3')">
+                                <p>What We Offer</p>
+                            </a></li>
+                        <li><a href="sections.html" class="element" onclick="showContent('s-4')">
+                                <p>SSS</p>
+                            </a></li>
+                        <li><a href="sections.html" class="element" onclick="showContent('s-5')">
+                                <p>Join Us Content</p>
+                            </a></li>
+                    </div>
+
+                    <li><a href="#" id="x3">
+                            <i class="fa-solid fa-gear"></i>
+                            <p>General Settings</p>
+                        </a></li>
+                    <div class="elements" id="3">
+                        <li><a href="general_settings.html" class="element" onclick="showContent('g-1')">
+                                <p>API Settings</p>
+                            </a></li>
+                        <li><a href="general_settings.html" class="element" onclick="showContent('g-2')">
+                                <p>Error Pages</p>
+                            </a></li>
+                    </div>
+                </ul>
+            </div>
+        </div>
+        <section class="dashboard">
+            <header>
+                <div class="navbar-dashboard">
+                    <div class="vertical-container">
+                        <div class="search-div">
+                            <div class="icon"><i class="fa-solid fa-search"></i></div>
+                            <input type="search" placeholder="Search here..">
+                        </div>
+                        <div class="user-sect">
+                            <div class="notification">
+                                <i class="fa-solid fa-bell"></i>
+                            </div>
+                            <div class="user-info">
+                                <i class="fa-solid fa-user interactable"></i><i
+                                    class="fa-solid fa-caret-down interactable-menu"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="dash-content interactive-tab" id="p-1">
+                <div class="product-grid grid-dashboard-title" data-title="Ürünler">
+                    <div class="pop-item item product" href="#">
+                        <div class="product-title">
+                            <h1>Praesent in ultrices risus</h1>
+                        </div>
+                        <div class="product-about">
+                            <p>Praesent in ultrices risus, id tincidunt tortor. Nullam eu eros et nibh rutrum lacinia.
+                                Quisque suscipit accumsan ultrices. Vestibulum congue in metus vitae hendrerit.
+                                Suspendisse viverra dui dolor, et sagittis neque vestibulum et. Donec mauris felis,
+                                interdum non porta eget, finibus gravida eros. In mattis ullamcorper auctor.</p>
+                        </div>
+                        <div class="product-price">
+                            <label for="">Fiyat</label>
+                            <p>125 TL</p>
+                        </div>
+                        <div class="product-control">
+                            <button class="p-change"><i class="fa-solid fa-pen"></i></button>
+                            <button class="p-inspect"><i class="fa-solid fa-pen-to-square"></i></button>
+                            <button class="p-remove"><i class="fa-solid fa-trash"></i></button>
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="pop-item item product" href="#">
+                        <div class="product-title">
+                            <h1>Fusce congue</h1>
+                        </div>
+                        <div class="product-about">
+                            <p>Fusce congue, nisl sed fringilla elementum, tellus justo rutrum augue, sit amet laoreet
+                                nisl odio nec nunc. Vivamus posuere convallis cursus. Aliquam eget eros in turpis
+                                gravida accumsan sed quis ipsum. Nullam pharetra arcu magna, ac vestibulum erat blandit
+                                maximus. Donec urna quam, sagittis sed nunc non, consequat mattis metus. Vestibulum et
+                                massa dapibus, elementum risus non, lobortis felis. Suspendisse lobortis risus quis
+                                vestibulum condimentum. Proin pharetra mollis erat, et finibus diam lobortis quis.</p>
+                        </div>
+                        <div class="product-price">
+                            <label for="">Fiyat</label>
+                            <p>150 TL</p>
+                        </div>
+                        <div class="product-control">
+                            <button class="p-change"><i class="fa-solid fa-pen"></i></button>
+                            <button class="p-inspect"><i class="fa-solid fa-pen-to-square"></i></button>
+                            <button class="p-remove"><i class="fa-solid fa-trash"></i></button>
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
