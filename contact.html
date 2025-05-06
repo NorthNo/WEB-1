@@ -1,7 +1,16 @@
 <!DOCTYPE html>
 <html lang="tr">
 
-@include('templates.header')
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alter ● İletişim</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/minilogo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
 
 <body
     <!-- Contact -->
@@ -9,8 +18,7 @@
         <div class="content">
             <div class="grid-container">
                 <div class="contact-column">
-                    <form action="{{ route('contact.submit') }}" method="POST">
-                        @csrf
+                    <form action="" method="POST">
                         <div>
                             <label for="fullname">Tam Ad*</label>
                             <input type="text" name="fullname" id="fullname" placeholder="Adınızı girin.." required />
@@ -36,9 +44,9 @@
                     
                 </div>
                 <div class="login-column">
-                    <form action="{{ route('signup-contact') }}" method="POST">   
+                    <form action="" method="POST">   
                         <h1>Bize Katılın</h1>
-                        <p>{{ $data->content ?? '' }}</p>
+                        <p></p>
 
                         <label for="email">Email Adresi*</label>
                         <input type="email" name="email" id="email" placeholder="Email adresinizi girin.." />
@@ -75,13 +83,13 @@
                                 <a href="index.html">Ana Sayfa</a>
                             </div>
                             <div class="f-navbar-element">
-                                <a href="index.html">Servisler</a>
+                                <a href="servisler.html">Servisler</a>
                             </div>
                             <div class="f-navbar-element">
-                                <a href="index.html">İletişim</a>
+                                <a href="contact.html">İletişim</a>
                             </div>
                             <div class="f-navbar-element">
-                                <a href="index.html">Hesabım</a>
+                                <a href="user.html">Hesabım</a>
                             </div>
                         </div>
                     </div>
